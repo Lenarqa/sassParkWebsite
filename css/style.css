@@ -116,6 +116,45 @@
 .menu-nav-item:nth-child(4) {
   transition-delay: 0.55s; }
 
+.about {
+  padding-bottom: 2rem; }
+  .about-park-img {
+    height: 50ch;
+    width: 100%;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.5)), url("../img/about-park-img.webp") center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; }
+    .about-park-img p {
+      margin-bottom: 2rem; }
+  .about-bio {
+    width: 90%;
+    text-align: center; }
+    .about-bio .text-secondary {
+      padding-bottom: 1rem; }
+  .about .park {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem; }
+    .about .park-card {
+      background: #414141;
+      padding: .5rem;
+      border-bottom: 5px solid #ff652f; }
+      .about .park-card h2, .about .park-card h3 {
+        margin: .5rem 0; }
+      .about .park-card h6 {
+        margin: .3rem 0; }
+  .about .icons {
+    display: flex;
+    flex-direction: column; }
+
+footer {
+  transform: rotate(90deg) translate(-3rem, -5rem); }
+
 body {
   background-color: #272727;
   color: #fff;
@@ -129,6 +168,9 @@ h1, h2, h3 {
 a {
   color: #fff;
   text-decoration: none; }
+
+.text-secondary {
+  color: #ff652f; }
 
 header {
   position: fixed;

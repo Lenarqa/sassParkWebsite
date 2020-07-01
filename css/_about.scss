@@ -1,0 +1,63 @@
+.about{
+    padding-bottom: 2rem;
+
+    &-park-img{
+        height: 50ch;
+        width: 100%;
+        background: 
+        linear-gradient(
+            to right,
+            rgba($primary-color, .9),
+            rgba($primary-color, .5),  
+        ),
+        url('../img/about-park-img.webp') center;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        p{
+            margin-bottom: 2rem;
+        }
+    }
+    
+    &-bio{
+        width: 90%;
+        text-align: center;
+
+        .text-secondary{
+            padding-bottom: 1rem;
+        }
+    }
+
+    .park{
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        &-card{
+            background: lighten($primary-color, 10%);
+            padding: .5rem;
+            border-bottom: 5px solid $secondery-color;
+
+            h2,h3{
+                margin: .5rem 0;
+            }
+
+            h6{
+                margin: .3rem 0;
+            }
+        }
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+}
+        footer{
+            transform: rotate(90deg) translate(-3rem, -5rem);
+        }
