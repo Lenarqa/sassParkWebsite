@@ -1,0 +1,20 @@
+$primary-color: #272727;
+$secondery-color: #ff652f;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin transition-ease ($time) {
+    transition: all $time ease-in-out;
+}
+
+@function set-text-color($color){
+    @if(lightness($color) > 40%){
+        @return #000;
+    }@else{
+        @return #fff; 
+    }
+}

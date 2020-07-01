@@ -1,0 +1,28 @@
+.home{
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: 
+        linear-gradient(
+            to right,
+            rgba($primary-color, .9),
+            rgba($primary-color, .3),  
+        ),
+        url('../img/home-bg.webp') center;
+        // url('https://cdn.pixabay.com/photo/2020/06/28/08/50/eastern-grey-kangaroo-5348449_1280.jpg') center;
+    background-size: cover;
+
+    &-name{
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        border-bottom: 2px solid set-text-color($primary-color);
+
+        &-last{
+            color: $secondery-color;
+            font-weight: 700;
+        }
+    }
+}
