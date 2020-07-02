@@ -237,10 +237,47 @@ footer {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     font-size: 1.5rem; }
+  .contact .icons {
+    position: initial;
+    margin-top: 2rem; }
 
 footer {
   transform: none; }
 
+@media screen and (min-width: 320px) {
+  .home-name {
+    font-size: 3rem; }
+
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem); } }
+@media screen and (min-width: 768px) {
+  .home-name {
+    font-size: 5rem; }
+
+  .about-bio {
+    font-size: 1.5rem; }
+
+  .projects-park-img {
+    height: 40vh; }
+  .projects-items {
+    grid-template-columns: repeat(2, 1fr); }
+  .projects .text-secondary {
+    font-size: 3rem; }
+
+  .contact-list {
+    grid-template-columns: repeat(2, 1fr); }
+
+  footer {
+    transform: none; } }
+@media screen and (min-width: 1024px) {
+  .projects-items {
+    grid-template-columns: repeat(3, 1fr); }
+
+  .contact-list {
+    grid-template-columns: repeat(3, 1fr); } }
+@media screen and (min-width: 1600px) {
+  .projects-parl-img {
+    height: 50vh; } }
 body {
   background-color: #272727;
   color: #fff;
